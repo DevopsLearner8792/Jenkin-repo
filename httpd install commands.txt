@@ -1,0 +1,16 @@
+ clear
+    2  ls
+    3  nano nginx-install.yml
+    4  sudo nano nginx-install.yml
+    5  ansible-playbook -i hosts nginx-install.yml --check
+    6  sudo nano nginx-install.yml
+    7  clear
+    8  ansible-playbook -i hosts nginx-install.yml --check
+    9  clear
+   10  sudo nano nginx-install.yml
+   11  ansible-playbook -i hosts nginx-install.yml --check
+   12  clear
+   13  sudo nano nginx-install.yml
+   14  ansible-playbook -i hosts nginx-install.yml --check
+   15  ansible-playbook -i hosts nginx-install.yml
+   16  history
