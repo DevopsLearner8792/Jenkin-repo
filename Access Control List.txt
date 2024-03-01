@@ -1,0 +1,121 @@
+    Access Control List:
+
+    1  mkdir MyCourses
+    2  cs MyCourses
+    3  cd MyCourses
+    4  mkdir jenkins
+    5  mkdir ansible
+    6  mkdir docker
+    7  ls
+    8  useradd j1 j2 j3
+    9  clear
+   10  useradd j1
+   11  useradd j2
+   12  useradd j3
+   13  useradd a1
+   14  useradd a2
+   15  useradd d1
+   16  cleaf
+   17  clear
+   18  pwd
+   19  cd ..
+   20  pwd
+   21  chmod 770 MyCourses/
+   22  apt install acl
+   23  getfacl MyCourses/
+   24  setfacl -m u:j1:rwx MyCourses/jenkins
+   25  getfacl MyCourses/jenkins
+   26  setfacl -m u:a1:rw MyCourses/jenkins
+   27  setfacl -m u:d1:r MyCourses/jenkins
+   28  clear
+   29  getfacl MyCourses/jenkins
+   30  groupadd jenkins
+   31  gpasswd -M j1,j2,j3 jenkins
+   32  groupadd ansible
+   33  gpasswd -M a1,a2 ansible
+   34  setfacl -m g:jenkins:rw MyCourses/jenkins/
+   35  getfacl MyCourses/jenkins
+   36  setfacl -m g:ansible:r MyCourses/jenkins/
+   37  clear
+   38  getfacl MyCourses/jenkins
+   39  setfacl -b MyCourses/jenkins
+   40  getfacl MyCourses/jenkins
+   41  clear
+   42  ls
+   43  cd MyCourses
+   44  las
+   45  ls
+   46  cd jenkins
+   47  touch file1.txt
+   48  nano file1.txt
+   49  cat file1.txt
+   50  ls -l
+   51  cd ..
+   52  clear
+   53  setfacl -m u:j1:rwx MyCourses/jenkins/
+   54  getfacl MyCourses/jenkins
+   55  cd MyCourses
+   56  cd jenkins
+   57  ls -l
+   58  clear
+   59  cd ..
+   60  nano /etc/passwd
+   61  nano /etc/group
+   62  clear
+
+Memory management Commands:
+
+   65  df
+   66  df -h
+   67  df -h -BK
+   68  df -h -BG
+   69  clear
+   70  du
+   71  du -h
+   72  du -ah
+   73  du -ahc
+   74  clear
+   75  ls
+   76  cd Mycourses
+   77  cd MycCourses
+   78  cd MyCourses
+   79  ls
+   80  cd jenkins
+   81  ls
+   82  cd ..
+   83  du -h MyCourses/
+   84  cd MyCourses
+   85  ls
+   86  cd ansible
+   87  nano file2.txt
+   88  cd ..
+   89  du -h MyCourses/
+   90  cd MyCourses
+   91  cd jenkins
+   92  du -h jenkins
+   93  du -h
+   94  cd ..
+   95  ls
+   96  cd ansible
+   97  ls
+   98  du -h
+   99  cd ..
+  100  ls
+  101  cd docker
+  102  du -h
+  103  cd ..
+  104  clear
+  105  free
+  106  free -h
+  107  clear
+  108  free -h -s 3
+  109  clear
+  110  free -h -s 10
+  111  clear
+  112  free -h -c 5
+  113  free -h -c 8
+  114  clear
+  115  df -h
+  116  du -h
+  117  free -h
+  118  clear
